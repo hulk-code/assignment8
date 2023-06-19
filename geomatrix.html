@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <nav class="bg-sky-700 p-5 shadow md:flex md:items-center md:justify-between ">
+      <div>
+         <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline" src="michael-dziedzic-dvHkp6FzfIM-unsplash.jpg" alt="">
+            Calculaton Geomatrix
+         </span>
+      </div>
+      <ul class="md:flex md:text-center">
+         <li class="mr-10">
+            <a href="index.html" class="text-xl hover:text-cyan-500 duration 500">Go To Another Page</a>
+         </li>
+         <li class="text-xl hover:text-cyan-500 duration 500">About</li>
+      </ul>
+
+   </nav>
+   <div class=" grid grid-cols-4 ">
+      <div class="border-2 rounded-lg  hover:bg-sky-700">
+         <p>
+            <img class=" ml-16 mt-5 mb-5 h-40 " src="triangle.png" alt="">
+            
+         
+         </p>
+         <p class="ml-32 text-bold ">triangle
+         </p>
+         <p class="ml-28 mb-2 text-bold">
+           Area(A)=0.5*w * L <br>
+          </p>
+          <p class="mb-2">
+            <input id="input-one" placeholder="W" class="w-16 mb-2 ml-11" type="text " required><span class="ml-2" >cm</span>
+            <input id="input-two" class="w-16 ml-5" type="text" placeholder="L" required><span class="ml-2">cm</span> <br>
+            <button id="button-one" class="ml-28 text-bold bg-amber-600 p-1 rounded-lg  text-justify text-white hover:text-cyan-500 duration 500">Calculation</button>
+          </p>
+          </p>
+           
+      </div>
+
+      <div class="border-2 rounded-lg   hover:bg-sky-700">
+         <p>
+            <img class=" ml-20 mt-5 mb-5 h-40 " src="pentagon.png" alt="">
+            
+         
+         </p>
+         <p class="ml-28 text-bold ">Pentagon
+         </p>
+         <p class="ml-20 mb-2 text-bold">
+           Area(A)= 0.5*P * B <br>
+          </p>
+          <p class="">
+            <input id="input-three" class="w-16 mb-2 ml-14" type="text"><span class="ml-2">cm</span>
+            <input id="input-four" class="w-16" type="text"><span class="ml-2">cm</span> <br>
+            <button id="button-two" class="ml-28 text-bold bg-amber-600 p-1 rounded-lg text-white hover:text-cyan-500 duration 500">Calculate</button>
+          </p>
+          </p>
+           
+      </div>
+      <div class="border-2 rounded-lg   hover:bg-sky-700">
+         <p>
+            <img class=" ml-12 mt-5 mb-5 h-40 " src="parallelogram.png" alt="">
+            
+         
+         </p>
+         <p class="ml-28 text-bold ">parallelogram
+         </p>
+         <p class="ml-28 mb-2 text-bold">
+           Area(A)=B * H <br>
+          </p>
+          <p class="mb-2">
+            <input id="input-para-one" class="w-16 mb-2 ml-16" type="text"><span class="ml-2">cm</span>
+            <input id="input-para-two" class="w-16" type="text"><span class="ml-2">cm</span> <br>
+            <button class="ml-28 text-bold bg-amber-600 p-1 rounded-lg text-white hover:text-cyan-500 duration 500" id="button-three">Calculate</button>
+          </p>
+          </p>
+           
+      </div>
+      <div>
+        <p class="text-bold ml-28 underline" >Total Calculation</p>
+          
+        <ul>
+         <i class="text-bold ml-3">Triangle:<span id="first-result" class="ml"></span>cm<sup>2</sup><button id="convert-buttonOne" class="bg-amber-600 ml-16 rounded-lg mb-5 p-1 hover:text-cyan-500 duration 500">convert into m<sup>2</sup></button></i>
+
+         <i class="text-bold ml">Pentagon:<span id="second-result" class="ml"></span>cm<sup>2</sup> <button id="convert-buttonTwo" class="bg-amber-600 ml-16 rounded-lg mb-5 p-1 hover:text-cyan-500 duration 500">convert into m<sup>2</sup> </button></i>
+
+         <i class="text-bold ml-3 ">parallelo:<span id="pera-cm-result" class="ml-"></span>cm<sup>2</sup><button id="convert-button-para" class="bg-amber-600 ml-16 rounded-lg mb-5 p-1  hover:text-cyan-500 duration 500">convert into m<sup>2</sup></button></i>
+
+         <i class="text-bold ml-3">Rhombus:<span id="total-rhom-calculation" class="ml"></span>cm<sup>2</sup> <button id="convert-rhom-button" class="bg-amber-600 ml-16 rounded-lg mb-5 p-1 hover:text-cyan-500 duration 500">convert into m<sup>2</sup></button></i>
+
+         <i class="text-bold ml-3">Ractangle:<span id="total-rac-calculation" class=""></span>cm<sup>2</sup><button id="convert-rac-button" class="bg-amber-600 ml-16 rounded-lg mb-5 p-1 hover:text-cyan-500 duration 500">convert into m<sup>2</sup></button></i>
+
+         <i class="text-bold ml-3">Ellipse:<span id="total-calculation-elli" class="ml-"></span>cm<sup>2</sup> <button class="bg-amber-600 ml-16 rounded-lg mb-5 p-1 hover:text-cyan-500 duration 500" id="convert-ellips-button">convert into m<sup>2</sup></button></i>
+        </ul>
+
+      </div>
+         
+         
+   </div>
+        
+             <!-- this is another Gird -->
+
+     <div class="grid grid-cols-4 mt-5 ">
+      <div class="border-2 rounded-lg   hover:bg-sky-700">
+         <p>
+            <img class=" ml-12 mt-5 mb-5 h-40 " src="rectangle.png" alt="">
+            
+         
+         </p>
+         <p class="ml-28 text-bold ">Ractangle
+         </p>
+         <p class="ml-20 mb-2 text-bold">
+           Area(A)=w * L <br>
+          </p>
+          <p class="mb-2">
+            <input id="input-one-rac" class="w-16 mb-2 ml-9" type="text"><span class="ml-2">cm</span>
+            <input id="input-two-rac" class="w-16" type="text"><span class="ml-2">cm</span> <br>
+            <button class="ml-16 text-bold bg-amber-600 p-1 rounded-lg  text-justify hover:text-cyan-500 duration 500" id="button-four">Calculation</button>
+          </p>
+          </p>
+           
+      </div>
+
+      <div class="border-2 rounded-lg hover:bg-sky-700">
+         <p>
+            <img class=" ml-20 mt-5 mb-5 h-40 " src="rhombus.png" alt="">
+            
+         
+         </p>
+         <p class="ml-28 text-bold ">Rhombus
+         </p>
+         <p class="ml-20 mb-2 text-bold">
+           Area(A)=0.5*d1*d2 <br>
+          </p>
+          <p class="">
+            <input id="input-rhom-one" class="w-16 mb-2 ml-14" type="text"><span class="ml-2">cm</span>
+            <input id="input-rhom-two" class="w-16" type="text"><span class="ml-2">cm</span> <br>
+            <button class="ml-28 text-bold bg-amber-600 p-1 rounded-lg hover:text-cyan-500 duration 500" id="button-five">Calculate</button>
+          </p>
+          </p>
+           
+      </div>
+      <div class="border-2 rounded-lg   hover:bg-sky-700">
+         <p>
+            <img class=" ml-12 mt-5 mb-5 h-40 " src="ellipse.png" alt="">
+            
+         
+         </p>
+         <p class="ml-36 text-bold ">Ellipse
+         </p>
+         <p class="ml-28 mb-2 text-bold">
+           Area(A)=pai a*b<br>
+          </p>
+          <p class="mb-2">
+            <input id="input-one-elli" class="w-16 mb-2 ml-16" type="text"><span class="ml-2">cm</span>
+            <input id="input-two-elli" class="w-16" type="text"><span class="ml-2">cm</span> <br>
+            <button class="ml-28 text-bold bg-amber-600 p-1 rounded-lg hover:text-cyan-500 duration 500" id="button-six">Calculate</button>
+          </p>
+          </p>
+           
+      </div>
+      
+     </div>
+     <script src="geomatrix.js"></script>
+</body>
+</html>
